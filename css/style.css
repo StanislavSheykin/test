@@ -1,11 +1,44 @@
 body{
   font-family: 'PT Sans', sans-serif;
 }
+ul, li{
+  display: block;
+  padding: 0;
+  margin: 0;
+}
 /*First Screen*/
 .header{
   background: #000;
-  color: ;
+  color: #010101;
+  padding-top: 50px;
 }
 .menu{
 
+}
+.menu__item{
+margin: 0 50px;
+}
+.menu__item a{
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+}
+
+
+/*media*/
+
+@media screen and (max-width:992px) {
+  .logo{
+    display: block;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width:546px) {
+  .menu{
+    flex-direction: column;
+  }
+  .menu__item{
+    text-align: center;
+  }
 }
